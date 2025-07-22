@@ -21,14 +21,31 @@ This project combines elements of computer vision and deep learning with web int
     pip install -r requirements.txt --quiet
     ```
     
-### How to Run
+### How to Run & Interface Options
 
-1.  **Execute the Script:**
+This project supports three ways to interact with the emotion-based music recommendation system:
+
+**a)CLI Mode (Terminal)**
+- Run the core logic directly via terminal (no GUI).
     ```bash
-    python main_face.py
+    python code\ui_interfaces\cli_main.py
+    ```
+**b)Web Interface (Streamlit)**
+- Clean, browser-based UI using Streamlit.
+    ```bash
+    streamlit run code\ui_interfaces\app_local_streamlit.py
+    ```
+**c)Desktop App (PySimpleGUI)**
+- Native desktop GUI that runs as a standalone application.
+    ```bash
+    python code\ui_interfaces\app_PySimpleGUI.py
+    ```
+**Ignore - Deployed File**
+    ```
+    streamlit run code\deployment\app.py
     ```
 
-### Tech Stack & Libraries
+### Core Tech Stack & Libraries
 
 - Python: As the primary programming language for its versatility and extensive libraries.
 - OpenCV: For real-time image and video processing, including facial detection.
@@ -50,7 +67,7 @@ This project combines elements of computer vision and deep learning with web int
       - Based on the predicted emotion, the script constructs a YouTube search query.
       - The `webbrowser` module opens the search results in your default browser.
 
-- [Demo Video](https://www.youtube.com/watch?v=Qj5yUBjSr7I)
+- [Demo Video for CLI Interface](https://www.youtube.com/watch?v=Qj5yUBjSr7I)
 
 ### Main Features
 **1. Real-time Facial Detection and Emotion Recognition:**
@@ -64,7 +81,7 @@ This project combines elements of computer vision and deep learning with web int
    - Constructs a YouTube search query based on the detected emotion
 
 **3. Intuitive User Interface:**
-   - Provides a simple and user-friendly interface to interact with the application.
+   - Provides a simple and user-friendly interfaces to interact with the application.
    - Displays the detected emotion in real-time.
    - Presents a clear visual representation of the search results.
 
@@ -81,6 +98,7 @@ This project combines elements of computer vision and deep learning with web int
 
 We welcome contributions to this project. Feel free to fork the repository, make improvements, and submit pull requests.
 We value all contributions, whether it's through code, documentation, creating demos or just spreading the word.
+**If you have introduced a new Computer Vision Library based code or new model or using new library (such as fer), Please submit final code in new_models folder.**
 Here are a few useful resources to help you get started:
 - For contributions, [Check out the contribution guide](https://github.com/SGCODEX/Music-Recommendation-Using-Facial-Expressions/blob/main/CONTRIBUTING.md) .
 
